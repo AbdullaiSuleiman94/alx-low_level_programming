@@ -1,1 +1,1 @@
-0x04. C - More functions, more nested loops
+Write a function that multiplies two integers.
