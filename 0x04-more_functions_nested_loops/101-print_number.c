@@ -1,21 +1,31 @@
-#include "main.h"
-/**
- * print_number - print integer
- * @n: integer
- *
- * Return: void
- */
-void print_number(int n)
-{
-	unsigned int x;
+#include <stdio.h>
 
-	x = n;
-	if (n < 0)
-	{
-		_putchar(45);
-		x = -n;
-	}
-	if (x / 10)
-		print_number(x / 10);
-	_putchar((x % 10) + '0');
+/**
+*main- prints the largest prime factor
+*of a number
+*
+*Return: returns 0
+*/
+
+int main(void)
+{
+long number = 612852475143;
+int inc;
+while (inc++ < number / 2)
+{
+if (number % inc == 0)
+{
+number /= 2;
+continue;
+}
+
+for (inc = 3; inc < number / 2; inc += 2)
+{
+if (number % inc == 0)
+number /= inc;
+
+}
+}
+printf("%ld\n", number);
+return (0);
 }
