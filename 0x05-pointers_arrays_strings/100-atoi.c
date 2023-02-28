@@ -2,7 +2,6 @@
 /**
  * _atoi -  convert a string to an integer.
  * @s: string
- *
  * Return: if no number in the string 0 otherwise the number.
  */
 int _atoi(char *s)
@@ -47,4 +46,3 @@ int _atoi(char *s)
 			num = -1 * num;
 	return (num);
 }
-
